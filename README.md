@@ -23,37 +23,44 @@
 
 ## Features ✨
 
-- Get Saved Tabs `Planned`
-- Update Saved Tabs `Planned`
-- Create New Saved Tabs `Planned`
-- Modify Projects (Tab Groups) `Planned`
+- Create Google App Script Applications `Planned`
+- Create Google Add-On Applications `Planned`
+- CLASP Integration `Planned`
+- Prebuilt CI/CD Pipelines `Planned`
+- Use Svelte or React as the default UI Framework `Planned`
 - Typescript Support `Planned`
 
 ## Install 🛠
 
 ```sh
-npm install gasstation
+npm install -g gasstation
 ```
 
 ## Usage 🔭
 
 Read more about the [Design](https://github.com/intellibus/gasstation/blob/main/DESIGN.md) behind `gasstation` here.
 
-```typescript
-import { searchTabs } from 'gasstation';
+```sh
+$ gasstation init
 
-const { data, error } = await searchTabs({
-  query: {
-    globalFilter: {
-      filters: [{
-        operator: 'LIKE',
-        keyword: 'github'
-      }]
-    }
-  }
-}, TURTLE_API_KEY);
+Initializing your Gas Station Project...
 
-// { data: { tabs: [{...}] }, error: null }
+Choose your UI Framework:
+> Svelte
+  React
+
+Would you like Typescript Support (y/n): yes
+
+How would you like to authenticate w/ Google
+  OAuth Token
+> Service Account
+
+What is the file path to your service account json:
+~/.credentials/service-account.json
+
+Setting up CI/CD...
+
+Congrats! Your Gas Station Project is now ready!
 ```
 
 ## Documentation 🛰
