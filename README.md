@@ -33,7 +33,7 @@
 ## Install 🛠
 
 ```sh
-npm install -g gasstation
+npm install -g @intellibus/gasstation
 ```
 
 ## Usage 🔭
