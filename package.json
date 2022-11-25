@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@intellibus/gasstation",
-  "version": "1.0.148",
+  "version": "1.0.149",
   "description": "Template For G.A.S. (Google App Script) Apps",
   "author": "Intellibus Labs <labs@intellibus.com> (https://intellibus.dev/)",
   "license": "MIT",
